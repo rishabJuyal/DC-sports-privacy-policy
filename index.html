@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - DC Sports Academy</title>
-  <meta name="description" content="Privacy Policy for DC Sports Academy mobile application." />
+  <title>Privacy Policy | DC Sports Academy</title>
+  <meta name="description" content="Official Privacy Policy and Data Governance Charter for DC Sports Academy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #0A1E3C;
-      --accent: #1688ff;
-      --accent-light: #eff6ff;
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --bg-page: #f8fafc;
-      --card-bg: #ffffff;
-      --border: #e2e8f0;
-      --success: #059669;
+      --navy-950: #060e1e;
+      --navy-900: #0a1e3c;
+      --navy-800: #102a54;
+      --blue-600: #1688ff;
+      --blue-500: #2563eb;
+      --emerald-600: #059669;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-600: #475569;
+      --slate-900: #0f172a;
     }
     * {
       box-sizing: border-box;
@@ -23,219 +28,367 @@
       padding: 0;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-page);
-      color: var(--text-main);
-      line-height: 1.65;
-      padding: 32px 16px;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #f8fafc 0%, #eef2f6 100%);
+      color: var(--slate-900);
+      line-height: 1.7;
+      padding: 40px 16px;
+      -webkit-font-smoothing: antialiased;
     }
-    .container {
-      max-width: 820px;
+    .wrapper {
+      max-width: 860px;
       margin: 0 auto;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+    }
+    /* Header Card */
+    .hero-card {
+      background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-900) 60%, var(--navy-800) 100%);
+      border-radius: 24px;
+      padding: 48px 40px;
+      color: #ffffff;
+      box-shadow: 0 20px 40px -15px rgba(10, 30, 60, 0.25);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(22, 136, 255, 0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #93c5fd;
+      margin-bottom: 16px;
+    }
+    .pill-badge .dot {
+      width: 7px;
+      height: 7px;
+      background-color: #34d399;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #34d399;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+    .hero-meta {
+      font-size: 14px;
+      color: #94a3b8;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .hero-meta span strong {
+      color: #e2e8f0;
+    }
+
+    /* Content Body */
+    .content-card {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
     }
     @media (max-width: 640px) {
       body { padding: 16px 8px; }
-      .container { padding: 24px 18px; border-radius: 12px; }
+      .hero-card { padding: 28px 20px; border-radius: 18px; }
+      .content-card { padding: 24px 18px; border-radius: 18px; }
+      h1 { font-size: 26px; }
     }
-    .header-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background-color: var(--accent-light);
-      color: var(--accent);
-      padding: 4px 12px;
-      border-radius: 9999px;
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      border: 1px solid #bfdbfe;
-    }
-    h1 {
-      font-size: 28px;
-      color: var(--primary);
-      margin-bottom: 8px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-    .meta-date {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    h2 {
-      font-size: 18px;
-      color: var(--primary);
-      margin-top: 32px;
-      margin-bottom: 12px;
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
       font-weight: 700;
+      color: var(--navy-900);
+      margin-top: 36px;
+      margin-bottom: 14px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
+    }
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: linear-gradient(180deg, var(--blue-600), var(--navy-900));
+      border-radius: 4px;
     }
     p {
-      color: var(--text-muted);
+      color: var(--slate-600);
       font-size: 15px;
-      margin-bottom: 14px;
-    }
-    ul {
-      margin-left: 20px;
       margin-bottom: 16px;
-      color: var(--text-muted);
+    }
+    .lead-text {
+      font-size: 16px;
+      color: #334155;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .feature-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 20px;
+      transition: all 0.2s ease;
+    }
+    .feature-box:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+    .feature-box h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy-900);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .feature-box p {
+      font-size: 13.5px;
+      color: #64748b;
+      margin: 0;
+      line-height: 1.6;
+    }
+    ul.styled-list {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    ul.styled-list li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      color: var(--slate-600);
       font-size: 15px;
     }
-    li {
-      margin-bottom: 8px;
+    ul.styled-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 18px;
+      height: 18px;
+      background: #ecfdf5;
+      color: #059669;
+      font-size: 11px;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #a7f3d0;
     }
-    li strong {
-      color: var(--text-main);
+    ul.styled-list li strong {
+      color: var(--slate-900);
     }
-    .highlight-box {
-      background-color: #f1f5f9;
-      border-left: 4px solid var(--accent);
-      padding: 16px;
-      border-radius: 0 10px 10px 0;
-      margin: 18px 0;
+
+    .notice-box {
+      background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+      border: 1px solid #bbf7d0;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 24px 0;
+      display: flex;
+      gap: 12px;
+    }
+    .notice-box .icon {
+      font-size: 20px;
+    }
+    .notice-box p {
+      margin: 0;
       font-size: 14px;
-      color: var(--text-muted);
+      color: #166534;
+      font-weight: 500;
     }
-    .contact-card {
-      background: linear-gradient(135deg, #0A1E3C 0%, #1e3a8a 100%);
+
+    /* Contact Card */
+    .contact-banner {
+      background: linear-gradient(135deg, #0A1E3C 0%, #172554 100%);
+      border-radius: 18px;
+      padding: 32px;
       color: #ffffff;
-      padding: 24px;
-      border-radius: 12px;
-      margin-top: 36px;
+      margin-top: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .contact-card h3 {
-      font-size: 17px;
+    .contact-banner h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
       margin-bottom: 8px;
       font-weight: 700;
     }
-    .contact-card p {
-      color: #cbd5e1;
+    .contact-banner p {
+      color: #94a3b8;
       font-size: 14px;
-      margin-bottom: 8px;
+      margin-bottom: 18px;
     }
-    .contact-card a {
-      color: #93c5fd;
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .contact-item {
+      font-size: 13.5px;
+      color: #cbd5e1;
+    }
+    .contact-item strong {
+      color: #ffffff;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .contact-item a {
+      color: #60a5fa;
       text-decoration: none;
       font-weight: 600;
     }
-    .contact-card a:hover {
+    .contact-item a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
-      margin-top: 32px;
-      font-size: 13px;
+      margin-top: 36px;
       color: #94a3b8;
+      font-size: 13px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="header-badge">
-      <span>●</span> Official Legal Policy
-    </div>
-    <h1>Privacy Policy — DC Sports Academy</h1>
-    <div class="meta-date">
-      <strong>Effective Date:</strong> November 9, 2026 &nbsp;|&nbsp; <strong>App:</strong> DC Sports Academy
-    </div>
-
-    <p>
-      At <strong>DC Sports Academy</strong>, we are committed to protecting the privacy, confidentiality, and security of our students, parents, coaches, and staff. This Privacy Policy outlines how our mobile application collects, uses, protects, and discloses personal information in accordance with applicable data protection laws and Google Play Developer Program Policies.
-    </p>
-
-    <div class="highlight-box">
-      <strong>Core Purpose:</strong> The DC Sports Academy application is an operational management and administrative portal designed for offline, in-person sports coaching academies (Cricket, Football, Badminton, and athletic programs). It manages batch rosters, duty attendance, quarterly skill evaluations, and tuition fee ledgers.
+  <div class="wrapper">
+    <!-- Hero Card -->
+    <div class="hero-card">
+      <div class="pill-badge">
+        <span class="dot"></span> Official Legal Policy
+      </div>
+      <h1>Privacy Policy & Data Charter</h1>
+      <div class="hero-meta">
+        <span>Application: <strong>DC Sports Academy</strong></span>
+        <span>Version: <strong>1.0.0</strong></span>
+        <span>Effective Date: <strong>November 2026</strong></span>
+      </div>
     </div>
 
-    <h2>1. Information We Collect</h2>
-    <p>We only collect information that is strictly necessary for providing academy management and communication services:</p>
-    <ul>
-      <li>
-        <strong>Personal Identification Information:</strong> Student name, date of birth, emergency contact number, parent/guardian name, and email address collected during registration or academy admission.
-      </li>
-      <li>
-        <strong>Academy & Training Records:</strong> Enrolled sports programs, assigned batches, training schedules, daily attendance check-in records, and coach performance evaluations.
-      </li>
-      <li>
-        <strong>Tuition Fee & Payment Records:</strong> Monthly or quarterly tuition fee invoice details, offline payment reference numbers (UTR / Transaction IDs), payment timestamps, and payment modes.
-        <br /><em>Note: DC Sports Academy does NOT collect or store sensitive financial instruments such as credit card numbers, CVVs, debit card PINs, or net banking passwords.</em>
-      </li>
-      <li>
-        <strong>Device & Push Notification Data:</strong> Device Push Notification Tokens (via Firebase Cloud Messaging / Expo) strictly utilized to deliver critical operational reminders (e.g., batch cancellations, holiday announcements, and due fee alerts).
-      </li>
-    </ul>
+    <!-- Main Content -->
+    <div class="content-card">
+      <p class="lead-text">
+        At <strong>DC Sports Academy</strong>, we maintain a steadfast commitment to the privacy, security, and confidential handling of all student, parent, coach, and staff information. This policy transparently explains our data practices in full compliance with Google Play Developer Program Policies.
+      </p>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>Your information is used strictly for legitimate academy operations:</p>
-    <ul>
-      <li>To process admissions and manage batch capacities.</li>
-      <li>To record student attendance and track training consistency.</li>
-      <li>To generate official tuition fee receipts and maintain transparent ledgers.</li>
-      <li>To deliver critical academy notices, schedule shifts, and emergency updates.</li>
-      <li>To verify coach attendance and compute transparent staff payroll.</li>
-    </ul>
+      <div class="notice-box">
+        <span class="icon">🏛️</span>
+        <p>
+          <strong>Operational Scope:</strong> The DC Sports Academy app is a specialized administrative platform for physical, on-ground sports coaching academies (Cricket, Football, Badminton, and Athletic Development). It manages student admissions, training schedules, attendance logs, and verified fee receipts.
+        </p>
+      </div>
 
-    <h2>3. Third-Party Service Providers</h2>
-    <p>We work with trusted industry-standard infrastructure providers to deliver our services:</p>
-    <ul>
-      <li>
-        <strong>Supabase (PostgreSQL Database & Auth):</strong> Cloud database infrastructure with full encryption in transit (TLS 1.3) and at rest, protected by strict Row-Level Security (RLS) policies.
-      </li>
-      <li>
-        <strong>Google Firebase Cloud Messaging (FCM) & Expo:</strong> Utilized strictly for delivering real-time push notifications to your mobile device.
-      </li>
-      <li>
-        <strong>Razorpay:</strong> Trusted payment gateway partner for digital fee payment processing. Payment details are handled securely on PCI-DSS compliant infrastructure.
-      </li>
-    </ul>
+      <div class="section-title">1. Information We Collect</div>
+      <p>We strictly limit collection to details essential for sports training and academy management:</p>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>👤 Personal Identifiers</h4>
+          <p>Student full name, date of birth, emergency contact telephone number, and parent/guardian email address collected during registration.</p>
+        </div>
+        <div class="feature-box">
+          <h4>🏟️ Academy Rosters</h4>
+          <p>Enrolled sports disciplines, batch allocations, session timings, daily roll-call attendance check-ins, and coach skill ratings.</p>
+        </div>
+        <div class="feature-box">
+          <h4>🧾 Tuition Fee Records</h4>
+          <p>Monthly and quarterly tuition dues, offline reference IDs (UTR numbers), verified payment timestamps, and digital receipts.</p>
+        </div>
+        <div class="feature-box">
+          <h4>🔔 Device Push Tokens</h4>
+          <p>FCM device tokens utilized solely for transmitting urgent batch alerts, holiday announcements, and due fee reminders.</p>
+        </div>
+      </div>
 
-    <h2>4. Data Security & Storage</h2>
-    <p>
-      We implement enterprise-grade technical and organizational security measures to protect your data. All communication between the mobile application and backend servers is encrypted using Secure Sockets Layer / Transport Layer Security (HTTPS/TLS). Access to student data is strictly restricted by role-based permissions (Super Admin, Academy Manager, Coach, Parent/Student).
-    </p>
+      <div class="section-title">2. How We Utilize Your Information</div>
+      <ul class="styled-list">
+        <li><strong>Roster & Capacity Management:</strong> To allocate student admissions into age-appropriate sports batches and prevent overcrowded training sessions.</li>
+        <li><strong>Attendance & Safety Accountability:</strong> To log daily attendance on the field and ensure emergency contacts are instantly accessible to coaches.</li>
+        <li><strong>Financial Ledgers & Receipts:</strong> To record verified tuition settlements, clear outstanding arrears, and issue official downloadable receipts.</li>
+        <li><strong>Academy Operational Alerts:</strong> To transmit automated batch timings, coach substitutions, weather notices, and quarterly report publications.</li>
+      </ul>
 
-    <h2>5. Children’s Privacy</h2>
-    <p>
-      While our academy provides sports training to students of various age groups (including minors), the DC Sports Academy mobile application is intended for use by <strong>parents, legal guardians, and adult students (aged 18 and above)</strong>. We do not knowingly solicit or market directly to children under the age of 13. All student admissions and profile information must be created and verified by a parent, legal guardian, or authorized academy administrator.
-    </p>
+      <div class="section-title">3. Third-Party Infrastructure & Security</div>
+      <p>All data is maintained on enterprise-grade, certified cloud infrastructure:</p>
+      <ul class="styled-list">
+        <li><strong>Supabase (PostgreSQL Cloud Engine):</strong> Encrypted in transit via Transport Layer Security (TLS 1.3) and protected at rest with granular Row-Level Security (RLS) policies.</li>
+        <li><strong>Firebase Cloud Messaging (Google FCM):</strong> High-reliability notification transport strictly for device-level academy communications.</li>
+        <li><strong>Zero Data Monetization:</strong> We do not sell, license, rent, or trade student or family personal information to any marketing or advertisement networks.</li>
+      </ul>
 
-    <h2>6. User Rights & Data Deletion Policy</h2>
-    <p>
-      In compliance with Google Play Data Safety policies, users have full rights regarding their personal data:
-    </p>
-    <ul>
-      <li><strong>Access & Correction:</strong> You may review and update your profile details by contacting the academy desk or your assigned coach.</li>
-      <li><strong>Account & Data Deletion:</strong> You can request complete deletion of your account and associated personal data at any time. Simply email us at <a href="mailto:support@dcsportsacademy.in" style="color: var(--accent); font-weight: 600;">support@dcsportsacademy.in</a> with your registered phone number or Student ID. Requests are processed within 7 business days.</li>
-    </ul>
+      <div class="section-title">4. Children's Privacy & Guardian Governance</div>
+      <p>
+        While our physical academy coaches children and young athletes, the DC Sports Academy mobile portal is designed for operation by <strong>parents, legal guardians, and adult students aged 18 and older</strong>. Student registrations and fee authorizations must be completed by a parent, legal guardian, or authorized academy manager.
+      </p>
 
-    <h2>7. Changes to This Privacy Policy</h2>
-    <p>
-      We may update our Privacy Policy periodically to reflect operational, legal, or regulatory updates. We will notify users of any material changes by updating the "Effective Date" at the top of this page.
-    </p>
+      <div class="section-title">5. Data Deletion & Account Control</div>
+      <p>
+        In strict adherence to Google Play Data Safety requirements, every user maintains full autonomy over their stored records:
+      </p>
+      <ul class="styled-list">
+        <li><strong>Account Deletion:</strong> You may submit an account or data deletion request at any time by emailing <a href="mailto:support@dcsportsacademy.in" style="color: var(--blue-600); font-weight: 600;">support@dcsportsacademy.in</a>. All personal identity and profile links will be purged within 7 business days.</li>
+        <li><strong>Profile Rectification:</strong> Incorrect contact numbers or names can be rectified directly through your academy branch office or via the in-app profile editor.</li>
+      </ul>
 
-    <div class="contact-card">
-      <h3>Contact Us</h3>
-      <p>If you have any questions, feedback, or data privacy requests, please reach out to us:</p>
-      <p>📍 <strong>DC Sports Academy Campus:</strong> Main Campus & Sports Complex, Dehradun, Uttarakhand, India</p>
-      <p>✉️ <strong>Email:</strong> <a href="mailto:support@dcsportsacademy.in">support@dcsportsacademy.in</a></p>
-      <p>📞 <strong>Helpdesk:</strong> +91 98765 43210</p>
+      <!-- Contact Banner -->
+      <div class="contact-banner">
+        <h3>Academy Helpdesk & Data Governance</h3>
+        <p>For inquiries regarding this privacy charter or student record assistance:</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <strong>Campus Headquarters</strong>
+            DC Sports Academy & Complex, Dehradun, Uttarakhand, India
+          </div>
+          <div class="contact-item">
+            <strong>Official Support Email</strong>
+            <a href="mailto:support@dcsportsacademy.in">support@dcsportsacademy.in</a>
+          </div>
+          <div class="contact-item">
+            <strong>Administrative Helpline</strong>
+            +91 98765 43210 (Mon – Sat, 9 AM – 6 PM IST)
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-      &copy; 2026 DC Sports Academy. All rights reserved.
+      &copy; 2026 DC Sports Academy. All rights reserved. • Built for Athletic Excellence.
     </footer>
   </div>
 
 </body>
 </html>
-
